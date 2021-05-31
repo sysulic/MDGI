@@ -12,6 +12,7 @@ To run this code, you'll need the following libraries:
 * [Numpy 1.17.2](https://numpy.org/)
 * [NLTK 3.4.5](https://www.nltk.org/)
 * [tqdm](https://tqdm.github.io/)
+* [xlrd 1.2.0](https://github.com/python-excel/xlrd)
 
 
 
@@ -22,9 +23,11 @@ To train a MDGI-Joint model, run `python biencoder.py --data-path $path_to_wsd_d
 
 To evaluate an existing biencoder, run `python biencoder_TroFi_MDGI-Joint.py --data-path $path_to_data --ckpt $path_to_model_checkpoint --eval `.
 
-Similar commands can be used to run the MD-MGI model(`biencoder_TroFi_MDGI-Joint.py`) and the MD(only) model (`biencoder_TroFi_MD(only).py`).
+
 
 ## Notice
-MDGI-Joint-S is implemented by adding the argument `--tie-encoders` when running `biencoder_*_MDGI-Joint.py`.
+1. MDGI-Joint-S is implemented by adding the argument `--tie-encoders` when running `biencoder_*_MDGI-Joint.py`.
 
-When evaluating the model on VUA, please add the argument `--context-max-length 256`.
+2. When evaluating the model on VUA, please add the argument `--context-max-length 256`.
+
+3. The current version does not support multigpu.
