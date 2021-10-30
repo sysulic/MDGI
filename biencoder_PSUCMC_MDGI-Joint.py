@@ -51,9 +51,9 @@ parser.add_argument('--ckpt', type=str, required=True,
 parser.add_argument('--data-path', type=str, required=True,
     help='Location of top-level directory for the Unified WSD Framework')
 
-parser.add_argument('--train-m', type=int, required=True,
+parser.add_argument('--train-m', type=int, default=1,
     help='train metaphor')
-parser.add_argument('--train-w', type=int, required=True,
+parser.add_argument('--train-w', type=int, default=1,
     help='train wsd')
 
 

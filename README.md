@@ -17,11 +17,11 @@ To run this code, you'll need the following libraries:
 
 
 ## How to Run 
-To train a MDGI-Joint model, run `python biencoder.py --data-path $path_to_wsd_data --ckpt $path_to_checkpoint --encoder-name`. The required arguments are: `--data-path`, which is the access to the data path; and `--ckpt`, which is the filepath of the directory to which to save the trained model checkpoints and prediction files; `--encoder-name`, which is the name of the pretrained language model. 
+To train a MDGI-Joint model, run `python biencoder_PSUCMC_MDGI-Joint.py --data-path $path_to_data --ckpt $path_to_checkpoint --encoder-name $path_to_BERT(or other PLM)`. The required arguments are: `--data-path`, which is the access to the data path; and `--ckpt`, which is the filepath of the directory to which to save the trained model checkpoints and prediction files; `--encoder-name`, which is the name of the pretrained language model(if there exists problems, please look into the models/utils.py). 
 
 
 
-To evaluate an existing biencoder, run `python biencoder_TroFi_MDGI-Joint.py --data-path $path_to_data --ckpt $path_to_model_checkpoint --eval `.
+To evaluate an existing biencoder, run `python biencoder_PSUCMC_MDGI-Joint.py --data-path $path_to_data --ckpt $path_to_checkpoint --eval `.
 
 
 

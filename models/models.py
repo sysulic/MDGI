@@ -14,7 +14,7 @@ import sys
 from pytorch_transformers import *
 import torch.nn as nn
 
-from wsd_models.util import *
+from models.util import *
 
 def load_projection(path):
     proj_path = os.path.join(path, 'best_probe.ckpt')
